@@ -21,7 +21,9 @@ const forecast = (latitude, longitude, callback) => {
 					body.currently.temperature +
 					" degrees out. There is a " +
 					Math.floor(body.currently.precipProbability * 100) +
-					"% chance of rain."
+					"% chance of rain. The current wind speed is " +
+					body.currently.windSpeed +
+					"mph!"
 			);
 		}
 	});
